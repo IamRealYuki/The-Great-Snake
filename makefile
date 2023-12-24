@@ -1,13 +1,13 @@
 .PHONY: all
 
-all: compile link 
+all: compile link
 	
 compile:	
 	g++ -ISFMLlib/include -c main.cpp 
 
 link: 
-	g++ main.o -o SFMLlib/bin/main -LSFMLlib/lib -lsfml-graphics -lsfml-window -lsfml-system
+	g++ main.o -o SFMLlib/bin/snake -LSFMLlib/lib -lsfml-graphics -lsfml-window -lsfml-system
 
 run:
-	./SFMLlib/bin/main.exe
+	./SFMLlib/bin/snake.exe
 	
